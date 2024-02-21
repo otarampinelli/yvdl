@@ -1,5 +1,5 @@
 import express from "express";
-import downlaodRoute from './routes/download.route.js';
+import downloadRoute from './routes/download.route.js';
 
 const app = express();
 
@@ -11,6 +11,6 @@ app.get("/", (req, res) => {
     res.end("Listening");
   });
   
-app.use("/", downlaodRoute);
+app.use("/", downloadRoute);
 
 export default app

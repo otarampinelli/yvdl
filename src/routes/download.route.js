@@ -1,8 +1,8 @@
 import express from "express";
 import download from '../controllers/download.controller.js'
 
-const downlaodRoute = express.Router();
+const downloadRout = express.Router();
 
-downlaodRoute.get("/download", download);
+downloadRout.get("/download", download);
 
-export default downlaodRoute;
+export default downloadRout;
